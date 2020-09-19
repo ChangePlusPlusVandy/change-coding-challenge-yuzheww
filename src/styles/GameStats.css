@@ -5,7 +5,7 @@
   width: 350px;
 }
 
-.setting-list {
+.stats-list {
   margin-bottom: 8px;
 }
 
@@ -27,11 +27,4 @@
   font-size: 80px;
   text-align: center;
   margin-bottom: 20px;
-}
-
-.duration-setting {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
 }

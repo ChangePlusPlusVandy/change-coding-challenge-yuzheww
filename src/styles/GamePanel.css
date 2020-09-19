@@ -1,41 +1,52 @@
-.map-box {
-    position: relative;
-    height: inherit;
-    width: inherit;
-    top: 350px;
-  }
-  
-  .map,
-  .track,
-  .spinner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  
-  .map {
-    z-index: 0;
-  }
-  
-  .track {
-    z-index: 100;
-  }
-  
-  .spinner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
-    width: 960px;
-  }
-  
-  .hint {
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-  }
+.game-panel {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+.game-input {
+  display: flex;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+/* .ant-slider-handle {
+  border: solid 2px #1f6099;
+}
+.ant-slider-track {
+  background-color: #1f6099;
+}
+.ant-slider:hover .ant-slider-track {
+  background-color: #1f6099;
+} */
+
+.game-btn {
+  text-transform: none;
+  padding: 10px 22px;
+  background-color: #e6de0b;
+  font-size: 1em;
+  margin-left: 80px;
+  color: rgb(99, 96, 96);
+}
+
+.guess-btn {
+  text-transform: none;
+  padding: 5px 11px;
+  background-color: #e6de0b;
+  font-size: 1em;
+  margin-left: 80px;
+  color: rgb(99, 96, 96);
+}
+
+.tweet-show {
+  margin-top: 130px;
+  margin-bottom: 50px;
+  width: 550px;
+  height: 280px;
+  padding: 10px;
+  background-color: rgba(160, 155, 159, 0.954);
+  border: 5px solid rgba(77, 71, 75, 0.5);
+  display: inline-block;
+  /* vertical-align: middle; */
+}

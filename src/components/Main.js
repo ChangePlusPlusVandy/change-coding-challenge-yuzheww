@@ -1,12 +1,6 @@
 import React, { Component } from "react";
-// import GamePanel from "./GamePanel";
+import GamePanel from "./GamePanel";
 import GameStats from "./GameStats";
-import { Layout } from "antd";
-
-const { Sider, Content } = Layout;
-
-// const width = 960;
-// const height = 600;
 
 class Main extends Component {
   constructor() {
@@ -17,10 +11,6 @@ class Main extends Component {
       accuracy: 0,
     };
   }
-
-  fetchSatellite = (setting) => {
-    const url = 1;
-  };
 
   updateStats = (setting) => {
     if (setting.success) {
@@ -45,18 +35,16 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
-        <Layout>
-          <Sider className="left-side">
-            <GameStats
-              total={this.state.total}
-              correct={this.state.correct}
-              accuracy={this.state.accuracy}
-            />
-          </Sider>
-          <Content className="right-side">
-            {/* <GamePanel addNum={this.updateStats} zeroNum={this.resetStats} /> */}
-          </Content>
-        </Layout>
+        <div className="left-side">
+          <GameStats
+            total={this.state.total}
+            correct={this.state.correct}
+            accuracy={this.state.accuracy}
+          />
+        </div>
+        <div className="right-side">
+          <GamePanel addNum={this.updateStats} zeroNum={this.resetStats} />
+        </div>
       </div>
     );
   }
