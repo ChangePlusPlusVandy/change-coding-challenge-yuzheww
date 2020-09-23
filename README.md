@@ -1,3 +1,16 @@
+Summary:
+For some reason, I could not successfully fetch data from twitter api, but all logic of the game has been completed. This is a react app, and there are two main components for the game: GameStats and GamePanel. This two components share the same parent parent component: main.
+
+things to improve:
+1. fix api problem
+2. add choice to allow the users to choose celebrities other than elonmusk and kanyewest
+3. Change the logic of the loop of the game. Instead of putting the button click in a while loop, I should figure out some other ways to do it. 
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

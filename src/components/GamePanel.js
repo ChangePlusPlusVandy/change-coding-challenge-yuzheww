@@ -67,9 +67,10 @@ class GamePanel extends Component {
   componentDidMount() {
     fetch(TWITTER_BASE_URL + "&screen_name=kanyewest", {
       method: 'GET', 
-      mode: 'no-cors',
+      // mode: 'no-cors',
       headers: {
-        'Authorization': `Bearer ${BEARER_TOKEN}`,
+        'Access-Control-Allow-Origin': '*',
+        'Authorization': 'Bearer ' + BEARER_TOKEN,
       },
     })
       .then((res) => res.json())
@@ -88,9 +89,11 @@ class GamePanel extends Component {
 
     fetch(TWITTER_BASE_URL + "&screen_name=elonmusk", {
       method: 'GET', 
-      mode: 'no-cors',
+      // mode: 'no-cors',
       headers: {
-        'Authorization': `Bearer ${BEARER_TOKEN}`,
+        // 'Authorization': `Bearer ${BEARER_TOKEN}`,
+        'Access-Control-Allow-Origin': '*',
+        'Authorization': 'Bearer ' + BEARER_TOKEN,
       },
     })
       .then((res) => res.json())
